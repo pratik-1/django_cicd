@@ -1,3 +1,8 @@
+{% extends "base_menu.html" %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -7,3 +12,5 @@
 {% else %}
     <p>This feature will be added soon.</p>
 {% endif %}
+
+{% endblock %}
