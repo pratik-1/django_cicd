@@ -1,2 +1,2 @@
-# django_cicd
+# Django CD project
 
